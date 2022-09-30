@@ -8,6 +8,9 @@
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
   <title>Renier Vargas</title>
 </head>
+<style>
+  [x-cloak] { display: none !important; }
+</style>
 
 <body class="flex flex-col min-h-screen">
 
@@ -23,7 +26,9 @@
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span class="sr-only">Practicando TailWind</span>
-              RENIER VARGAS
+              <p class=" text-gray-500 px-6 text-xl font-extrabold">
+                RENIER VARGAS
+              </p>
               <!-- <img class="h-8 w-auto sm:h-10"
                 src="https://i.pinimg.com/originals/08/01/04/080104071037c36d3a3f794bc0bbf66a.jpg" alt=""> -->
             </a>
@@ -40,7 +45,7 @@
           </nav>
   
           <!-- Mobile menu button -->
-          <div class="flex items-center md:hidden">
+          <div class="flex items-center md:hidden mr-6">
             <button class="mobile-menu-button outline-none" @click="open = !open">
               <svg class="h-6 w-6 text-gray-500 hover:text-green-500"  fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -414,6 +419,8 @@
 
 
   </div>
+  
 </body>
+
 
 </html>

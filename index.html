@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -18,8 +18,8 @@
 
 
     <!-- HEADER NAV -->
-    <div x-data="{ open : false}">
-      <div class="sticky top-0 z-50">
+    <div x-data="{ open : false}" >
+      <div class="sticky top-0 z-50 ">
         <div class="relative bg-white">
           <div class="mx-auto max-w-7xl px-1 sm:px-1">
             <div class="flex items-center justify-between border-b-2 border-gray-100 py-4 md:justify-start md:space-x-10">
@@ -35,13 +35,13 @@
               </div>
               <!-- <p x-text="open"></p> -->
       
-              <nav class="hidden space-x-10 md:flex">
+              <nav class="hidden space-x-10 md:flex ">
                 <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Resume</a>
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">About Me</a>
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Skills</a>
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Education</a>
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Work Experience</a>
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact me</a>
+                <a href="#aboutme" class="text-base font-medium text-gray-500 hover:text-gray-900">About Me</a>
+                <a href="#skills" class="text-base font-medium text-gray-500 hover:text-gray-900">Skills</a>
+                <a href="#educacion" class="text-base font-medium text-gray-500 hover:text-gray-900">Education</a>
+                <a href="#work" class="text-base font-medium text-gray-500 hover:text-gray-900">Work Experience</a>
+                <a href="#contact" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact me</a>
               </nav>
       
               <!-- Mobile menu button -->
@@ -62,7 +62,7 @@
           <li class="active"><a href="index.html" class="block bg-green-500 px-2 py-2 text-sm font-semibold text-white">Resume</a></li>
           <li><a href="#about" class="block px-2 py-2 text-sm transition duration-300 hover:bg-green-500">About Me</a></li>
           <li><a href="#skills" class="block px-2 py-2 text-sm transition duration-300 hover:bg-green-500">Skills</a></li>
-          <li><a href="#education" class="block px-2 py-2 text-sm transition duration-300 hover:bg-green-500">Education</a></li>
+          <li><a href="#educacion" class="block px-2 py-2 text-sm transition duration-300 hover:bg-green-500">Education</a></li>
           <li><a href="#work" class="block px-2 py-2 text-sm transition duration-300 hover:bg-green-500">Work Experience</a></li>
           <li><a href="#contact" class="block px-2 py-2 text-sm transition duration-300 hover:bg-green-500">Contact me</a></li>
         </ul>
@@ -76,7 +76,7 @@
 
     <!-- ABOUT ME -->
 
-    <div class="mx-auto sm:p-8">
+    <div class="mx-auto sm:p-8" id="aboutme" >
       <!-- This example requires Tailwind CSS v2.0+ -->
       <div class="overflow-hidden bg-white shadow sm:rounded-lg">
 
@@ -192,9 +192,7 @@
 
     <!-- SKILLS -->
 
-    <div class="container mx-auto md:px-28  md:mx-auto md:container">
-
-
+    <div class="container mx-auto md:px-28  md:mx-auto md:container" id="skills">
       <section class="m-4 md:m-8 font-medium text-gray-600">
       
             <div class="container mx-auto p-4 my-6 space-y-3 text-center">
@@ -325,16 +323,10 @@
               <!-- ITEMS -->
       
             </div>
-          </section>
-      
-      
-      
-      
-          </div>
+      </section>
+    </div>
 
     <!-- SKILLS -->
-
-
 
     <!-- BODY CONTENIDO -->
 

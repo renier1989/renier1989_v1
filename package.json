@@ -1,0 +1,24 @@
+{
+  "name": "renier1989",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tailwind -i ./src/tailwind.css -o ./public/tailwind.css",
+    "prod": "npx tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renier1989/renier1989.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renier1989/renier1989.github.io/issues"
+  },
+  "homepage": "https://github.com/renier1989/renier1989.github.io#readme"
+}

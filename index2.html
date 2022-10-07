@@ -8,18 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tailwind.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./public/css/tailwind.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
     <title>Renier Vargas</title>
 </head>
 
 <body class="font-Montserrat dark:bg-gray-900">
 
-    <nav x-data="{open : false}">
+    <nav x-data="{open : false}" class="">
 
         <div class="fixed z-50 bg-white w-full h-auto  flex p-4 justify-between  shadow-md">
-            <p class="text-2xl font-extrabold">Renier Vargas</p>
+            <p class="text-2xl font-extrabold text-primary">Renier Vargas</p>
 
             <div class="hidden space-x-5 items-center lg:flex">
                 <a class="font-medium text-lg" href="#aboutme"> About Me</a>
@@ -61,7 +61,7 @@
         </div>
         <!-- MENU MOBILE -->
         <div x-show="open"
-            class="w-full h-auto fixed  opacity-90 pt-20 flex flex-col px-4 py-3 space-y-3 bg-gray-100 rounded-b-md shadow-xl lg:hidden">
+            class="w-full h-auto fixed z-10  opacity-90 pt-20 flex flex-col px-4 py-3 space-y-3 bg-gray-100 rounded-b-md shadow-xl lg:hidden">
             <a class="font-medium text-lg" href="#aboutme" @click="open = !open"> About Me</a>
             <a class="font-medium text-lg" href="#skills"> Skills</a>
             <a class="font-medium text-lg" href="#education"> Education</a>
@@ -71,7 +71,7 @@
 
     </nav>
 
-    <section class="lg:px-48 pt-20 lg:mr-16">
+    <section class="lg:px-48 pt-20 lg:mr-16 z-0">
 
         <!-- ABOUT ME -->
         <div class=" p-2  shadow-md" id="aboutme">
@@ -315,112 +315,119 @@
         </div>
 
         <!-- WORK EXPERIENCE -->
-        <div id="experience">
-            
-                <div class="relative mt-5 text-left p-6">
-                    <div class="flex items-center relative">
-                        <div class="hidden md:block w-20">
-                            <div class="font-bold italic">2020</div>
-                            <div class="md:flex space-x-1 text-xs">
-                                <div>Abr.</div>
-                                <div>-</div>
-                                <div>Jun.</div>
-                            </div>
-                        </div>
+        <div id="experience" class="pt-14  text-gray-600 shadow-xl mb-8 ">
 
-                        <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
+            <div class="text-center ">
+                <p class="text-4xl font-bold">
+                    Work Experience
+                </p>
+            </div>
 
-                            <div class=" -top-1 -ml-2 absolute">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                    <circle cx="8" cy="8" r="8" />
-                                </svg>
-                            </div>
-                        </div>
 
-                        <div class="ml-10">
-                            <div class="font-bold">Proyecto 1</div>
-                            <div class="italic md:mb-4">Empresa 1</div>
-                            <div class="mb-4 mt-2 md:hidden">
-                                <div class="font-bold">2020</div>
-                                <div class="text-xs">Abril - Junio</div>
-                            </div>
-                            <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id
-                                ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit
-                                sed, vestibulum ultrices nibh.</div>
+            <div class="relative mt-5 text-left p-6 z-0">
+                <div class="flex items-center relative">
+                    <div class="hidden md:block w-20">
+                        <div class="font-bold italic">2020</div>
+                        <div class="md:flex space-x-1 text-xs">
+                            <div>Abr.</div>
+                            <div>-</div>
+                            <div>Jun.</div>
                         </div>
                     </div>
 
+                    <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
 
-
-
-                    <div class="flex items-center relative">
-                        <div class="hidden md:block w-20">
-                            <div class="font-bold italic">2020</div>
-                            <div class="md:flex space-x-1 text-xs">
-                                <div>Jul.</div>
-                                <div>-</div>
-                                <div>Ago.</div>
-                            </div>
-                        </div>
-
-                        <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
-                            <div class=" -top-1 -ml-2 absolute">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                    <circle cx="8" cy="8" r="8" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="ml-10">
-                            <div class="font-bold">Proyecto 2</div>
-                            <div class="italic md:mb-4">Empresa 2</div>
-                            <div class="mb-4 mt-2 md:hidden">
-                                <div class="font-bold">2020</div>
-                                <div class="text-xs">Julio - Agosto</div>
-                            </div>
-                            <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id
-                                ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit
-                                sed, vestibulum ultrices nibh.</div>
+                        <div class=" -top-1 -ml-2 absolute">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>
                         </div>
                     </div>
 
-
-
-
-                    <div class="flex items-center relative">
-                        <div class="hidden md:block w-20">
-                            <div class="font-bold italic">2020</div>
-                            <div class="md:flex space-x-1 text-xs">
-                                <div>Ago.</div>
-                                <div>-</div>
-                                <div>Hoy.</div>
-                            </div>
+                    <div class="ml-10">
+                        <div class="font-bold">Proyecto 1</div>
+                        <div class="italic md:mb-4">Empresa 1</div>
+                        <div class="mb-4 mt-2 md:hidden">
+                            <div class="font-bold">2020</div>
+                            <div class="text-xs">Abril - Junio</div>
                         </div>
+                        <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id
+                            ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit
+                            sed, vestibulum ultrices nibh.</div>
+                    </div>
+                </div>
 
-                        <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
-                            <div class=" -top-1 -ml-2 absolute">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                    <circle cx="8" cy="8" r="8" />
-                                </svg>
-                            </div>
-                            <i class="fas fa-circle bottom-0 -ml-2 absolute"></i>
-                        </div>
 
-                        <div class="ml-10">
-                            <div class="font-bold">Proyecto 3</div>
-                            <div class="italic md:mb-4">Empresa 3</div>
-                            <div class="mb-4 mt-2 md:hidden">
-                                <div class="font-bold">2020</div>
-                                <div class="text-xs">Agosto - Hoy</div>
-                            </div>
-                            <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id
-                                ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit
-                                sed, vestibulum ultrices nibh.</div>
+
+
+                <div class="flex items-center relative">
+                    <div class="hidden md:block w-20">
+                        <div class="font-bold italic">2020</div>
+                        <div class="md:flex space-x-1 text-xs">
+                            <div>Jul.</div>
+                            <div>-</div>
+                            <div>Ago.</div>
                         </div>
                     </div>
+
+                    <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
+                        <div class=" -top-1 -ml-2 absolute">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="ml-10">
+                        <div class="font-bold">Proyecto 2</div>
+                        <div class="italic md:mb-4">Empresa 2</div>
+                        <div class="mb-4 mt-2 md:hidden">
+                            <div class="font-bold">2020</div>
+                            <div class="text-xs">Julio - Agosto</div>
+                        </div>
+                        <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id
+                            ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit
+                            sed, vestibulum ultrices nibh.</div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="flex items-center relative">
+                    <div class="hidden md:block w-20">
+                        <div class="font-bold italic">2020</div>
+                        <div class="md:flex space-x-1 text-xs">
+                            <div>Ago.</div>
+                            <div>-</div>
+                            <div>Hoy.</div>
+                        </div>
+                    </div>
+
+                    <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
+                        <div class=" -top-1 -ml-2 absolute">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>
+                        </div>
+                        <i class="fas fa-circle bottom-0 -ml-2 absolute"></i>
+                    </div>
+
+                    <div class="ml-10">
+                        <div class="font-bold">Proyecto 3</div>
+                        <div class="italic md:mb-4">Empresa 3</div>
+                        <div class="mb-4 mt-2 md:hidden">
+                            <div class="font-bold">2020</div>
+                            <div class="text-xs">Agosto - Hoy</div>
+                        </div>
+                        <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id
+                            ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit
+                            sed, vestibulum ultrices nibh.</div>
+                    </div>
+                </div>
 
 
 
@@ -430,7 +437,11 @@
 
 
         <!-- CONTACT ME -->
-        <div></div>
+        <div>
+            <div>
+
+            </div>
+        </div>
 
 
     </section>

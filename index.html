@@ -15,11 +15,12 @@
     <title>Renier Vargas</title>
 </head>
 
-<body class="font-Montserrat dark:bg-gray-900" >
+<body class="font-Montserrat dark:bg-gray-900">
 
     <nav x-data="{open : false}" class="">
 
-        <div class="fixed z-50 bg-white w-full h-auto  flex p-4 justify-between  shadow-md dark:bg-gray-800 dark:text-white">
+        <div
+            class="fixed z-50 bg-white w-full h-auto  flex p-4 justify-between  shadow-md dark:bg-gray-800 dark:text-white">
             <p class="text-2xl font-extrabold">Renier Vargas</p>
 
             <div class="hidden space-x-5 items-center lg:flex">
@@ -30,7 +31,7 @@
                 <!-- <a class="font-medium text-lg" href="#contact"> Contact me</a> -->
             </div>
 
-            <div class="hidden lg:flex">
+            <div class="hidden lg:flex space-x-5 items-center">
                 <button id="toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                         class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
@@ -40,6 +41,20 @@
                             d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
                     </svg>
                 </button>
+                <a href="https://github.com/renier1989" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6" fill="currentColor "
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/renier-vargas-0a971b125/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </a>
             </div>
 
             <!-- MOBILE BUTTON -->
@@ -67,7 +82,7 @@
             <a class="font-medium text-lg" href="#skills"> Habilidades</a>
             <!-- <a class="font-medium text-lg" href="#education"> Education</a> -->
             <a class="font-medium text-lg" href="#experience"> Experiencia</a>
-            <div class="justify-between ">
+            <div class="justify-between flex">
                 <button id="toggle-sm" class="font-medium text-lg" href="javascript:void(0)">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 items-center" fill="currentColor"
                         class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
@@ -77,7 +92,22 @@
                             d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
                     </svg>
                 </button>
-
+                <div class="flex space-x-2">
+                    <a href="https://github.com/renier1989" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6" fill="currentColor "
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/renier-vargas-0a971b125/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -88,13 +118,14 @@
         <!-- ABOUT ME -->
         <div class=" text-gray-600 p-2  shadow-md" id="aboutme">
 
-            <div class="lg:flex  lg:items-center border-b-2 pt-16" >
+            <div class="lg:flex  lg:items-center border-b-2 pt-16">
                 <div class="">
                     <img class="mx-auto w-1/2 h-1/2 lg:w-full lg:h-full " src="images/renier1989.png" alt="">
                 </div>
                 <div class="p-6 space-y-5">
                     <p class="mx-auto text-5xl font-bold lg:px-14  dark:text-white "> Sobre mi</p>
-                    <div class="text-justify text-lg lg:w-full justify-center lg:px-14 dark:text-white"> Soy Ingeniero en sistemas enfocado al
+                    <div class="text-justify text-lg lg:w-full justify-center lg:px-14 dark:text-white"> Soy Ingeniero
+                        en sistemas enfocado al
                         desarrollo web Fullsatck con experiencia en la creación de sistemas administrativos, sitios web,
                         adaptado a tus necesidades.
                         Cuento con más de 9 años de experiencia en el ámbito tecnológico centrados en el Desarrollo como
@@ -106,7 +137,7 @@
             </div>
             <div class="text-lg p-6 space-y-4 lg:grid lg:grid-cols-2 dark:text-white">
                 <div>
-                    <p class="font-bold" >Nombre</p>
+                    <p class="font-bold">Nombre</p>
                     <p>Renier Josue Vargas Mejias</p>
                 </div>
                 <div>
@@ -133,6 +164,24 @@
                     <p class="font-bold">Correo Electronico</p>
                     <p>vargasrjmejias27@gmail.com</p>
                 </div>
+                <div>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/renier1989" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6" fill="currentColor "
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/renier-vargas-0a971b125/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
@@ -153,8 +202,10 @@
                                 Síntesis curricular
                             </p>
                         </div>
-                        <div class="mr-2  text-right font-medium text-blue-500 hover:text-blue-600 dark:text-white dark:hover:text-white">
-                            <a href="./public/docs/RenierVargas_CV.pdf" target="_blank" class="cursor-pointer hover:font-semibold"> Descargar </a>
+                        <div
+                            class="mr-2  text-right font-medium text-blue-500 hover:text-blue-600 dark:text-white dark:hover:text-white">
+                            <a href="./public/docs/RenierVargas_CV.pdf" target="_blank"
+                                class="cursor-pointer hover:font-semibold"> Descargar </a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +229,7 @@
                         </div>
                     </div>
                 </div> -->
-                
+
             </div>
 
         </div>
@@ -213,7 +264,8 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl"> 3 años </b> de experiencia usan este framework como complemento a Laravel para agilizar procesos de desarrollo.
+                            <b class="text-xl"> 3 años </b> de experiencia usan este framework como complemento a
+                            Laravel para agilizar procesos de desarrollo.
                         </div>
                     </div>
 
@@ -225,7 +277,8 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl"> 5 años </b> de experiencia usando este Framework front-end amigable para aplicar estilos a aplicación y sitios web.
+                            <b class="text-xl"> 5 años </b> de experiencia usando este Framework front-end amigable para
+                            aplicar estilos a aplicación y sitios web.
                         </div>
                     </div>
 
@@ -236,7 +289,8 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl"> 3 años </b> usando este Framework CSS como una solución ágil a los estilos Web.
+                            <b class="text-xl"> 3 años </b> usando este Framework CSS como una solución ágil a los
+                            estilos Web.
                         </div>
                     </div>
 
@@ -247,7 +301,8 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl font-extrabold"> 1 año </b> implementando este Framework CSS como solución rapida y ágil de los estilos Web.
+                            <b class="text-xl font-extrabold"> 1 año </b> implementando este Framework CSS como solución
+                            rapida y ágil de los estilos Web.
                         </div>
                     </div>
 
@@ -258,7 +313,8 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl font-extrabold"> 1 año </b> usando esta librería javascript que añade gran funcionalidad y reactividad a sitios Web.
+                            <b class="text-xl font-extrabold"> 1 año </b> usando esta librería javascript que añade gran
+                            funcionalidad y reactividad a sitios Web.
                         </div>
                     </div>
 
@@ -269,17 +325,19 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl font-extrabold"> 7 años </b> de experiencia usando este lenguaje de programación.
+                            <b class="text-xl font-extrabold"> 7 años </b> de experiencia usando este lenguaje de
+                            programación.
                         </div>
                     </div>
-                    
+
                     <!-- ITEM PHP-->
                     <div class="Card bg-gray-200 dark:bg-gray-800">
                         <div class=" w-full h-auto  ">
                             <img class="mx-auto w-3/6 md:w-24" src="https://renier1989.github.io/images/php.svg" alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl"> 8 años </b> usando este lenguaje de programación como CORE en los Frameworks de Backend.
+                            <b class="text-xl"> 8 años </b> usando este lenguaje de programación como CORE en los
+                            Frameworks de Backend.
                         </div>
                     </div>
 
@@ -290,7 +348,8 @@
                                 alt="">
                         </div>
                         <div class="text-justify px-3 py-5">
-                            <b class="text-xl font-extrabold"> 10 años </b> de experiencia usando este sistema de gestión de Base de datos relacional.
+                            <b class="text-xl font-extrabold"> 10 años </b> de experiencia usando este sistema de
+                            gestión de Base de datos relacional.
                         </div>
                     </div>
 
@@ -334,20 +393,29 @@
                     </div>
 
                     <div class="ml-10 ">
-                        <div class="font-bold">EDERACIÓN NACIONAL DE COOPERATIVAS DE AHORRO Y CRÉDITO DEL PERÚ (FENACREP)</div>
+                        <div class="font-bold">EDERACIÓN NACIONAL DE COOPERATIVAS DE AHORRO Y CRÉDITO DEL PERÚ
+                            (FENACREP)</div>
                         <div class="italic md:mb-4">Analista Programador</div>
                         <div class="mb-4 mt-2 md:hidden">
                             <div class="font-bold">2020</div>
                             <div class="text-xs">Julio - Actualidad</div>
                         </div>
-                        <div class="mb-3 text-gray-600 font-semibold dark:text-white">Funciones: Analista Programador, enfocado en el desarrollo , mantenimiento e implementación de soluciones web, utilizando tecnologias como Laravel Frameworkm, Livewire , Bulma , AlpineJs , PHP , Javascript , MySQL, dando soporte y brindando nuevos servicios a nuestras cooperativas afiliadas a la FENACREP.</div>
+                        <div class="mb-3 text-gray-600 font-semibold dark:text-white">Funciones: Analista Programador,
+                            enfocado en el desarrollo , mantenimiento e implementación de soluciones web, utilizando
+                            tecnologias como Laravel Frameworkm, Livewire , Bulma , AlpineJs , PHP , Javascript , MySQL,
+                            dando soporte y brindando nuevos servicios a nuestras cooperativas afiliadas a la FENACREP.
+                        </div>
                         <div class="mb-12 text-gray-600  text-sm dark:text-white">
-                            <b> Aptitudes: </b> Livewire · Bases de datos · Diseño de bases de datos · Análisis de datos · MySQL · Desarrollo de páginas web (Back-End) · Desarrollo de sitios web · Ingeniería de sistemas · Laravel · Bootstrap · PHP · Frameworks de PHP · PhpMyAdmin · Programación · Base de datos relacional · Creación de sitios web · Análisis de sistemas · Implementación de sistemas · JavaScript · Git · Mysql
+                            <b> Aptitudes: </b> Livewire · Bases de datos · Diseño de bases de datos · Análisis de datos
+                            · MySQL · Desarrollo de páginas web (Back-End) · Desarrollo de sitios web · Ingeniería de
+                            sistemas · Laravel · Bootstrap · PHP · Frameworks de PHP · PhpMyAdmin · Programación · Base
+                            de datos relacional · Creación de sitios web · Análisis de sistemas · Implementación de
+                            sistemas · JavaScript · Git · Mysql
                         </div>
                     </div>
                 </div>
 
-                
+
 
                 <!-- ITEM EXP 2 -->
                 <div class="flex items-center relative">
@@ -360,7 +428,8 @@
                         </div>
                     </div>
 
-                    <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10 dark:border-white dark:text-white">
+                    <div
+                        class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10 dark:border-white dark:text-white">
 
                         <div class=" -top-1 -ml-2 absolute">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -378,9 +447,17 @@
                             <div class="text-xs">Abril - Julio</div>
                         </div>
                         <div class="mb-3 text-gray-600 font-semibold  dark:text-white">
-                            Funciones : Desarrollador web, encargado de la programación del BackEnd y FrontEnd de los proyectos de la empresa bajo diferentes Frameworks de Programación como Laravel + VueJs, Nuxt, Jquery, Bootstrap para nuestros suscriptores afiliados. Manejo de Versiones con GIT. Administración, Mantenimiento Diseño de Bases de datos en MySQL bajo las herramientas DbDesigner y Navicat</div>
+                            Funciones : Desarrollador web, encargado de la programación del BackEnd y FrontEnd de los
+                            proyectos de la empresa bajo diferentes Frameworks de Programación como Laravel + VueJs,
+                            Nuxt, Jquery, Bootstrap para nuestros suscriptores afiliados. Manejo de Versiones con GIT.
+                            Administración, Mantenimiento Diseño de Bases de datos en MySQL bajo las herramientas
+                            DbDesigner y Navicat</div>
                         <div class="mb-1 text-gray-600  text-sm dark:text-white">
-                            <b>Aptitudes:</b> Bases de datos · Diseño de bases de datos · Análisis de datos · MySQL · Desarrollo de páginas web (Back-End) · Desarrollo de sitios web · Ingeniería de sistemas · Laravel · Bootstrap · PHP · Frameworks de PHP · PhpMyAdmin · VueJs · Programación · Base de datos relacional · Creación de sitios web · Análisis de sistemas · Implementación de sistemas · JavaScript · jQuery · Git · Mysql
+                            <b>Aptitudes:</b> Bases de datos · Diseño de bases de datos · Análisis de datos · MySQL ·
+                            Desarrollo de páginas web (Back-End) · Desarrollo de sitios web · Ingeniería de sistemas ·
+                            Laravel · Bootstrap · PHP · Frameworks de PHP · PhpMyAdmin · VueJs · Programación · Base de
+                            datos relacional · Creación de sitios web · Análisis de sistemas · Implementación de
+                            sistemas · JavaScript · jQuery · Git · Mysql
                         </div>
                     </div>
                 </div>

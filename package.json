@@ -6,7 +6,9 @@
   "dependencies": {
     "tailwindcss": "^3.1.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwind-scrollbar": "^2.0.1"
+  },
   "scripts": {
     "build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
     "prod": "npx tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --minify"
